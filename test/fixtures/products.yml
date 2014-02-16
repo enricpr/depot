@@ -11,3 +11,9 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+  
+ruby:
+  title: McFarlane NBA Series 1 Allen Iverson
+  description: Ruby is the fastest growing bla bla bla...
+  price: 59.75
+  image_url: ruby.png
