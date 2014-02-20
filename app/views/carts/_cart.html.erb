@@ -1,0 +1,11 @@
+<h2>Your Cart</h2>
+<div class="posts">
+  <%= render(cart.line_items) %>
+  <div class="post">
+    <div class="post-content">
+	  Total:
+	</div>
+    <span class="add2Cart"><%= number_to_currency(cart.total_price) %></span>
+  </div>
+</div>
+<%= button_to 'Empty Cart', cart, method: :delete, data: { confirm: 'fo real?!' }, class: "add2Cart btn btn-primary btn-sm" %>

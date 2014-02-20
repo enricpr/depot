@@ -1,0 +1,6 @@
+<div class="post">
+  <div class="post-content">
+    <%= line_item.product.title %> &times; <%= line_item.quantity %>
+  </div>
+  <span class="add2Cart"><%= number_to_currency(line_item.total_price) %></span>
+</div>
