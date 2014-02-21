@@ -1,5 +1,9 @@
 <div class="post">
-  <div class="post-content">
+  <% if line_item == @current_item %>
+    <div id="current_item" class="post-content">
+  <% else %>
+    <div class="post-content">
+  <% end %>
     <%= line_item.product.title %> &times; <%= line_item.quantity %>
   </div>
   <span class="add2Cart"><%= number_to_currency(line_item.total_price) %></span>
